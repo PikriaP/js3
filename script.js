@@ -1,5 +1,5 @@
 // classworck, switch 
-let role = 'admin';
+let role = prompt('admin');
 let accessLevel;
 
 switch(role) {
