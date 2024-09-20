@@ -17,3 +17,9 @@ switch(role) {
 }
 
 console.log(`User role: ${role}, Access level: ${accessLevel}`);
+
+
+for (let i=5; i>= 1; i--){
+    console.log(i);
+}
+
