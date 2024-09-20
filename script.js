@@ -23,6 +23,27 @@ for (let i=5; i>= 1; i--){
     console.log(i);
 }
 
+// 1
+let words= 'MIRACLE';
+let lowerCased= words.toLowerCase();
+console.log(lowerCased);
+let isPalindrome = true;
+for (let i=0; i<lowerCased.length/2; i++ ){
+    if(lowerCased[i] !== lowerCased[lowerCased.length-1-i]){
+        isPalindrome=false;  
+        break;
+    }
+}
+if(isPalindrome){
+    console.log('input is palindrome.');
+    
+}else{
+    console.log('input is not palindrome.');
+}
+
+
+
+
 // 2
 const fruits = ["Banana", "Orange", "Apple", "Kiwi"];
 const spliced= fruits.splice(1, 2);
@@ -34,3 +55,28 @@ const fruits1 = ["Banana", "Orange", "Apple", "Kiwi"];
 const sorted= fruits1.sort();
 console.log(sorted);
 // [ 'Apple', 'Banana', 'Kiwi', 'Orange' ]
+
+// 4
+
+let calcAverage = (a, b, c) => ((a + b + c) / 3);
+
+let scoreDolphins = calcAverage(85, 54, 41);
+let scoreKoalas = calcAverage(23, 34, 27);
+
+
+console.log(`Dolphins average score: ${scoreDolphins}`);
+console.log(`Koalas average score: ${scoreKoalas}`);
+
+
+function checkWinner(avgDolphins, avgKoalas) {
+    if (avgDolphins >= 2 * avgKoalas) {
+        console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas})`);
+    } else if (avgKoalas >= 2 * avgDolphins) {
+        console.log(`Koalas win (${avgKoalas} vs ${avgDolphins})`);
+    } else {
+        console.log('No team wins.');
+    }
+}
+
+
+checkWinner(scoreDolphins, scoreKoalas);
