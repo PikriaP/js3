@@ -80,3 +80,17 @@ function checkWinner(avgDolphins, avgKoalas) {
 
 
 checkWinner(scoreDolphins, scoreKoalas);
+
+// classchallenge
+let birthYear = Number(prompt('please enter your birthyear'));
+
+function calcAge() {
+    return 2024 - birthYear;
+}
+
+if (calcAge() >= 18) {
+    console.log('სრულწლოვანი');
+} else {
+    console.log('არასრულწლოვანი');
+}
+
